@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import Api from "../components/utils/Api";
+import Api from "../utils/Api";
 import Card from "../components/Card";
 import Row from "../components/Row";
 import Container from "../components/Container";
