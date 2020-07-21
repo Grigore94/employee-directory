@@ -1,10 +1,10 @@
 import React, { Component } from "react";
-import Api from "../utils/Api";
+import Api from "../components/utils/Api";
 import Card from "../components/Card";
 import Row from "../components/Row";
 import Container from "../components/Container";
 import Column from "../components/Column";
-import "./styles.css";
+// import "./styles.css";
 
 class Employees extends Component {
   state = {
@@ -40,7 +40,7 @@ class Employees extends Component {
       allResultsParsed: searchResults,
     });
   };
-  //Sorting employees bu last name
+  //Sorting employees by last name
   sortPeopleLN = (value) => {
     let searchResults = this.state.allResults.filter((x) => {
       return x.name.last.toLowerCase().includes(value);
@@ -71,13 +71,13 @@ class Employees extends Component {
         </form>
         <Container>
           <Row>
-            {results.map((employees, 1) => (
+            {results.map((employees, i) => (
               <Column key={i}>
                 <Card
+                  fullName={employees.name.first + employees.name.last}
                   firstName={employees.name.first}
                   lastName={employees.name.last}
                   image={employees.picture.large}
-                  fullName={employees.name.first + employees.name.last}
                   age={employees.dob.age}
                   DOB={employees.dob.date}
                   ssn={employees.id.value}

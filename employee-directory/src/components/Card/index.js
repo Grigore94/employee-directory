@@ -1,7 +1,7 @@
 import React from 'react';
 import './style.css';
 
-function Card (props.) {
+function Card (props) {
     return (
         <div className="img"> 
         <img className="card-img-top" src={props.image} alt={`Our employee ${props.firstname} ${props.lastName}`}></img>
