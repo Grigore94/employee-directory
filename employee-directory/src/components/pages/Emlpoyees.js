@@ -80,7 +80,7 @@ class Employees extends Component {
                   fullName={employees.name.first + employees.name.last}
                   age={employees.dob.age}
                   DOB={employees.dob.date}
-                  ssn={employeesid.value}
+                  ssn={employees.id.value}
                   email={employees.email}
                   phoneNumber={employees.phone}
                 />
