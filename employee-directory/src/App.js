@@ -4,6 +4,7 @@ import Employees from './pages/Emlpoyees.js';
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
 import Wrapper from './components/Wrapper';
+import About from './pages/About.js'
 
 
 function App() {
@@ -12,8 +13,8 @@ function App() {
       <div>
         <Navbar />
         <Wrapper>
-          {/* <Route exact path="/" component={About} />
-          <Route exact path="/about" component={About} /> */}
+          <Route exact path="/" component={About} />
+          <Route exact path="/about" component={About} /> 
           <Route exact path="/all" component={Employees} />
         </Wrapper>
         <Footer />
