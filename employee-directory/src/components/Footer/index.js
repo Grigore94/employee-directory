@@ -4,7 +4,7 @@ import "./style.css";
 function Footer() {
   return (
     <footer className="footer">
-      <span id ="footer">Made with ❤ in SLC </span>
+      <span id ="footer">2020 StraightLineUp &copy;</span>
     </footer>
   );
 }
