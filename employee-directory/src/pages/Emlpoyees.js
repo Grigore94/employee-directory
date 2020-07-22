@@ -4,7 +4,7 @@ import Card from "../components/Card";
 import Row from "../components/Row";
 import Container from "../components/Container";
 import Column from "../components/Column";
-// import "./styles.css";
+import "./style.css";
 
 class Employees extends Component {
   state = {
@@ -54,17 +54,17 @@ class Employees extends Component {
     const results = this.state.allResultsParsed;
     return (
       <div>
-        <h1 className="text-center">Corporation</h1>
+        <h1 className="text-center">StraightLineUp</h1>
         <form className="search-form form-inline">
           <div>
             <input
               className="employeeSearch"
-              placeholder="Search by first name"
+              placeholder="Search by First Name"
               onChange={this.handleSearchFN}
             />
             <input
               className="employeeSearch"
-              placeholder="Search by last name"
+              placeholder="Search by Last Name"
               onChange={this.handleSearchLN}
             />
           </div>
