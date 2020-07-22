@@ -1,0 +1,31 @@
+.img {
+    background-size: cover;
+    background-position: center;
+    background-clip: content-box;
+    border: 3px solid rgb(202, 211, 240);
+    height: 565px;
+    width: 350px;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+    position: relative;
+    margin: 0 auto;
+    margin-top: 20px;
+    margin-left: 20px;
+    
+  }
+  
+  .img .fa-spinner {
+    font-size: 150px;
+    position: absolute;
+    left: 25%;
+    top: 25%;
+  }
+  .card-title {
+      text-align: center;
+      color: whitesmoke;
+  }
+  .card-text {
+    border-radius: 5px;
+    background-color: white;
+    text-align: center;
+    
+  }
